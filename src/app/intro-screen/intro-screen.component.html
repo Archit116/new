@@ -1,0 +1,40 @@
+<div *ngIf="change==false" class="flexC center">
+	<div class="flexC center">
+	<div class=" welcomeBox flexC center">
+		<h1>BASC2001</h1>
+		<h1>MULTIMEDIA PRESENTATION</h1>
+		<h2>BOOK REPORT</h2>
+	</div>
+	
+</div>
+
+<div class="gap"></div>
+
+<div class="btnbtn">
+	<button class="center" (click)="turnPage()">
+		Welcome
+	</button>
+</div>
+<!-- 
+	<div class="centerWave">
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+  	</div> -->
+	
+</div>
+
+<div class="home" *ngIf="change">
+	<app-home class="center flexC"></app-home>
+</div>
+
+
+
+  

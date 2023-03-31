@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+	scroll-behavior: smooth;
+  }
+  
+body {
+	background-color: #494D5F;
+}
+
+/* Flex alignment classes */
+.flexR {
+	display: flex;
+	flex-direction: row;
+}
+
+.flexC {
+	display: flex;
+	flex-direction: column;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bgcheck {
+	background-color: blue;
+}
+
+.divider {
+	display: flex;
+}
+
+.divider:before, .divider:after {
+	content: "";
+	flex: 1;
+}
+
+  
+.gradient {
+	align-items: stretch;
+	margin: 1em 0;
+	height: 2em;
+	line-height: 2em;
+	color: white;
+	background: black;
+}
+
+.gradient:before {
+	background: linear-gradient(to right, white, black);
+}
+
+.gradient:after {
+	background: linear-gradient(to left, white, black);
+	}
+
+	.box {
+		-webkit-box-shadow: 0px 14px 11px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 14px 11px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 14px 11px -3px rgba(0,0,0,0.75);
+	}

@@ -1,0 +1,32 @@
+
+.buttonsContainer {
+	margin-top: 20vh;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	gap: 3vh;
+	padding: 5vh
+}
+
+.item {
+	border: 1vh solid black;
+	border-radius: 50px;
+	height: 25vh;
+	width: 50%;
+	transition: 0.3s;
+	color: white;
+}
+.item:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+
+h1 {
+	color:white;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.width {
+	width: 100%;
+}

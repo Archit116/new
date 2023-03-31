@@ -1,0 +1,33 @@
+<div *ngIf="active==false">
+	<h1 class="center" style="width:100%;">KEY TAKEAWAYS</h1>
+	<div class="center width">
+		<div class="width center buttonsContainer">
+			<div class="item center" (click)="ho()"><h2>Takeaway #1</h2></div>
+			<div class="item center" (click)="at()"><h2>Takeaway #2</h2></div>
+			<div class="item center" (click)="fe()"><h2>Takeaway #3</h2></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div *ngIf="active&&hope">
+	<app-idea (newItemEvent)="close($event)" [type]="'1'"></app-idea>
+</div>
+<div *ngIf="active&&attitude">
+	<app-idea (newItemEvent)="close($event)" [type]="'2'"></app-idea>
+</div>
+<div *ngIf="active&&fears">
+	<app-idea (newItemEvent)="close($event)" [type]="'3'"></app-idea>
+</div>
+<!-- <div *ngIf="active&&failure">
+	<app-idea (newItemEvent)="close($event)" [type]="'failure'"></app-idea>
+</div>
+<div *ngIf="active&&adapt">
+	<app-idea (newItemEvent)="close($event)" [type]="'adapt'"></app-idea>
+</div>
+<div *ngIf="active&&risk">
+	<app-idea (newItemEvent)="close($event)" [type]="'risks'"></app-idea>
+</div> -->
+
+

@@ -1,0 +1,41 @@
+<!-- <div class="center flexC">
+	<h1>LEADERSHIP QUALITIES</h1>
+	<div class="center flexC" *ngIf="active == false">
+			<div class="buttonsContainer">
+				<div class="item" (click)="cons()">
+					<button >consideration</button>
+				</div>
+				<div class="item">
+					<button (click)="mot()">motivation</button>
+				</div>
+				<div class="item">
+					<button (click)="stim()">stimulation</button>
+				</div>
+				<div class="item">
+					<button (click)="inf()">influence</button>
+				</div>
+		</div>
+	</div> -->
+	<!-- <h1 class="center" style="width:100%;">LEADERSHIP QUALITIES</h1> -->
+	<div *ngIf="active == false" style="margin-top:2vh;" class="center flexC width">
+		<h1 class="center" style="width:100%;">LEADERSHIP QUALITIES</h1>
+		<div class="center width">
+			<div class="width center buttonsContainer">
+				<div class="item center" (click)="cons()"><h2>TRANSFORMATIONAL</h2></div>
+				<div class="item center" (click)="mot()"><h2>SERVANT</h2></div>
+				<div class="item center" (click)="stim()"><h2>SITUATIONAL</h2></div>
+			</div>
+		</div>
+	</div>
+
+	<div style="width:100%;" *ngIf="active&&consideration">
+		<app-leadership-quality (newItemEvent)="newfunc($event)" [type]="'transformational'"></app-leadership-quality>
+	</div>
+	<div style="width:100%;" *ngIf="active&&motivation">
+		<app-leadership-quality (newItemEvent)="newfunc($event)" [type]="'servant'"></app-leadership-quality>
+	</div>
+	<div style="width:100%;" *ngIf="active&&stimulation">
+		<app-leadership-quality (newItemEvent)="newfunc($event)" [type]="'situational'"></app-leadership-quality>
+	</div>
+
+<!-- </div> -->
